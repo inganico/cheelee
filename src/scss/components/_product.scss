@@ -1,0 +1,41 @@
+.product {
+
+  &__container {
+    max-width: 1152px;
+    position: relative;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 365px;
+    z-index: 10;
+  }
+
+  &__title {
+    color: var(--light-color);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    padding-right: 20px;
+
+  &_span {
+    color: var(--turquoise-color);
+  }
+  }
+
+  &__desc {
+    color: rgba(252, 252, 253, 0.8);
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+    max-width: 1088px;
+    height: auto;
+    position: absolute;
+    top: -275px;
+    left: 244px;
+  }
+  }

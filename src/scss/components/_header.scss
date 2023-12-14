@@ -1,0 +1,235 @@
+.header {
+  padding-top: 20px;
+  position: relative;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 115px;
+  }
+
+  &__logo-text {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 8.80px;
+    letter-spacing: 2.38px;
+  }
+
+  &__logo-span {
+    text-transform: lowercase;
+  }
+
+  &__menu {
+
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    color: #5E636E;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s, border-bottom 0.3s ;
+
+    &:focus {
+      color: var(--turquoise-color);
+      border-bottom: 1px solid var(--white-color);
+    }
+
+    &:hover {
+      color: var(--turquoise-color);
+    }
+
+    &:active {
+      color: rgba(221, 182, 6, 0.884);;
+    }
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 30px;
+    margin-left: 115px;
+  }
+
+  &__cheel {
+    display: flex;
+    gap: 6px;
+    &::before {
+      content: url('../img/new-2.svg');
+    }
+  }
+
+  &__cheel-wrap {
+    display: flex;
+    flex-direction: column;
+
+    &_span1 {
+      color: #E5F7FF;
+      font-size: 8px;
+      text-transform: uppercase;
+    }
+
+    &_span2 {
+      position: relative;
+      display: block;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 5px;
+        right: -15px;
+        color: var( --turquoise-color);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 7px solid
+      }
+    }
+  }
+
+
+  &__lee {
+    display: flex;
+    gap: 6px;
+    &::before {
+      content: url('../img/new-3.svg');
+    }
+  }
+
+  &__lee-wrap {
+    display: flex;
+    flex-direction: column;
+
+    &_span1 {
+      color: #E5F7FF;
+      font-size: 8px;
+      text-transform: uppercase;
+    }
+
+    &_span2 {
+      position: relative;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 5px;
+        right: -15px;
+        color: var( --turquoise-color);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 7px solid
+      }
+    }
+  }
+
+  &__btn {
+    background: var(--violet-color);
+    border: none;
+    cursor: pointer;
+    padding: 12px 22px;
+    border-radius: 30px;
+    margin-left: 20px;
+    transition: background 0.3s;
+
+    &:focus {
+      background: rgba(70, 40, 238, 0.5);
+    }
+
+    &:hover {
+      background: var(--violet-hover);
+    }
+  }
+
+  &__languages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_en, &_ru {
+      color: var(--gray-color);
+      font-size: 16px;
+      background: transparent;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding-right: 20px;
+      transition: color 0.3s;
+
+      &:focus {
+        color: var(--turquoise-color);
+      }
+
+      &:hover {
+        color: var(--turquoise-color);
+      }
+
+      &:active {
+        color: rgba(221, 182, 6, 0.884);
+      }
+
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 7px;
+        right: 0px;
+        color: var(--gray-color);
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid
+      }
+    }
+
+    &_ru::after {
+      visibility: hidden;
+    }
+
+    &_ru {
+      position: absolute;
+      top: 18px;
+      visibility: hidden;
+    }
+  }
+}
+
+.header__languages.active .header__languages_ru {
+  visibility: visible;
+}
+
+.header__languages.open .header__languages_en {
+  visibility: hidden;
+}
+
+
+
+
+
+
+
